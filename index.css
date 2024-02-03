@@ -63,7 +63,30 @@
     margin-left: 4px;
     
 }
-
+#btn:hover{
+    background-color: black;
+    color: white;
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-5px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
 @media only screen and (max-width: 600px) {
     #box {
         width: 90%; /* Adjust the width for smaller devices */
@@ -80,7 +103,7 @@
     }
     #images{
         width: 410px;
-        
+        transition: max-height 1s;
         display: flex;
         justify-content: flex-start;
     }
@@ -95,4 +118,5 @@
         margin-left: 0;
         margin-bottom: 6px;
     }
+    
 }
